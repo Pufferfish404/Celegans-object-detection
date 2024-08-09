@@ -1,0 +1,16 @@
+from ultralytics import settings
+
+# View all settings
+print(settings)
+
+# Return a specific setting
+value = settings["runs_dir"]
+
+# Update a setting
+settings.update({"runs_dir": "/Users/RAX/Desktop/2024_cElegansObjectDetection/runs/detect"})
+
+# Update multiple settings
+settings.update({"runs_dir": "/Users/RAX/Desktop/2024_cElegansObjectDetection/runs/detect", "tensorboard": False})
+
+# Reset settings to default values
+settings.reset()
