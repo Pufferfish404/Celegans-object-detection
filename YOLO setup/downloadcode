@@ -1,6 +1,6 @@
 from roboflow import Roboflow
 rf = Roboflow(api_key="ZBTMdNCWw6Ao0N7GjLEg")
-project = rf.workspace("clothdetection").project("cloth_detection-uai3g")
-version = project.version(5)
+project = rf.workspace("ammer").project("cards-4cer3")
+version = project.version(3)
 dataset = version.download("yolov8")
 
